@@ -3,27 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Destinos Turísticos</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Perfumería Galardiel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Turisglobal </h1>
-        <p>Explora, comparte y descubre los mejores lugares del mundo.</p>
-        <nav>
-            <a href="login.html">Iniciar Sesión</a> |
-            <a href="register.html">Registrarse</a>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Perfumería Galardiel</div>
+            <div class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#resenas">Reseñas</a>
+                <a href="pages/login.html" id="loginBtn">Iniciar Sesión</a>
+                <span id="userName" style="display: none;"></span>
+                <a href="#" id="logoutBtn" style="display: none;">Cerrar Sesión</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="destino">
-            <h2>Explora Destinos Únicos</h2>
-            <p>Un lugar donde tus sueños de viaje se hacen realidad.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Blog de Destinos Turístico</p>
+
+    <section class="banner" id="inicio">
+        <div class="banner-content">
+            <h1>Perfumería Galardiel</h1>
+            <p>Descubre tu fragancia ideal</p>
+        </div>
+    </section>
+
+    <section class="section" id="nosotros" data-aos="fade-up">
+        <h2>Sobre Nosotros</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Somos una perfumería exclusiva con más de 20 años de experiencia...</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/img/perfume1.jpg" alt="Nuestra tienda">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="servicios" data-aos="fade-up">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+           
+        </div>
+    </section>
+
+    <section class="section" id="resenas" data-aos="fade-up">
+        <h2>Reseñas de Clientes</h2>
+        <div class="reviews-grid">
+           
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Twitter</a>
+        </div>
     </footer>
-    <script src="js/animaciones.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/auth.js"></script>
 </body>
 </html>
